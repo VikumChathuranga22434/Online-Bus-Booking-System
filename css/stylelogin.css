@@ -1,0 +1,35 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    clear: both;
+}
+
+.login {
+    font-size: 14px;
+    width: 350px;
+    margin: 100px auto;
+}
+
+p.error {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

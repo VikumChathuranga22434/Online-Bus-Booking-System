@@ -1,0 +1,107 @@
+* { 
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    clear: both;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(71, 68, 68, 0.5)), url(../img/busSys.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+/*----------------------for the home page---------------------*/
+.menuBar{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    color: white;
+    border-color: black;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.menuBar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 30px 20px;
+    position: relative;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menuBar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.menuBar ul li:hover::after{
+    width: 100%;
+}
+
+div.menuBar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+main {
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #aaa;
+    padding: 0 10px;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+main h1 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+table.master-list {
+    display: flex;
+    color: whitesmoke;
+    background: #aquamarine;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.master-list th {
+    text-align: left;
+    background: #aaa;
+}
+
+table.master-list th, table.master-list td{
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    margin-top: 30px;
+}
