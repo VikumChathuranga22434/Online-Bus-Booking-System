@@ -1,0 +1,77 @@
+*{
+  color: white;
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+  background-size: cover;
+  margin: 30px;
+  padding: 10px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 left;
+}
+
+
+h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+
+
+.drivers, .buses {
+  color: #010E0E;
+  margin-bottom: 10px;
+}
+
+.add-driver, .add-bus {
+  background-color: #69A6BE;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+table {
+  background: white;
+  color: white;
+/*  width: 50px;*/
+  border-collapse: collapse;
+  margin:30px;
+ 
+}
+
+table th {
+  color: white;
+  color: #0B0404;
+  border: 2px solid #040905;
+  padding: 10px;
+}
+
+table td {
+  color: white;
+  color: #0B0404;
+  border: 2px solid #040905;
+  padding: 10px;
+}
+
+.update-driver, .update-bus {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-driver, .delete-bus {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

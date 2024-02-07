@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;clear: both;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(71, 68, 68, 0.5)), url(../img/busSys.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    overflow: auto; 
+}
+
+/*----------------------for the home page---------------------*/
+.menuBar{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    color: white;
+    border-color: black;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.menuBar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 30px 20px;
+    position: relative;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menuBar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.menuBar ul li:hover::after{
+    width: 100%;
+}
+
+div.menuBar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/*----------------------for the login page---------------------*/
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    font-size: 14px;
+    color: white;
+    width: 350px;
+    margin: 20px auto;
+}
+
+form.user-login {
+    padding: 50px;
+    display: inline-block;
+}
+
+fieldset {
+    padding: 30px;
+}
+
+.txt_field {
+    position: relative;
+}
+
+p.error {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button{
+    width: 200px;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+} 
+
+.sign_up {
+    text-align: center;
+}
+
+.sign_up a {
+    text-decoration: none;
+    color: white;
+}
+
+div.sign_up a:hover {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}

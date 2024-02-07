@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 10px;
+  background-color: #69A6BE;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

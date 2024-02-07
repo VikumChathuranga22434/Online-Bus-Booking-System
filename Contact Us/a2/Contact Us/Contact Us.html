@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us Page</title>
+   <link rel="stylesheet" href="Contact Us.css">
+</head>
+<body>
+   <div class="contact">
+      <h2>Contact Us!</h2>
+   </div>
+   <form onsubmit="return validateForm()">
+      <center>
+         <label>Username:</label>
+         <input type="text" size="30" name="username" maxlength="15" placeholder="Enter your username"> <br>
+         <label>E-mail:</label>
+         <input type="email" size="30" name="email" placeholder="Enter your E-mail"><br>
+         <label>Contact Number:</label>
+         <input type="text" name="contactnumber" size="10"> <br>
+         <label>Message:</label>
+         <textarea class="textarea" rows="7" cols="25" name="message" placeholder="Enter your message"></textarea>
+      </center>
+      <br>
+      <center>
+         <button type="submit"><b>Submit</b></button>
+      </center>
+   </form>
+
+   <script>
+      function validateForm() {
+         var username = document.forms[0].username.value;
+         var email = document.forms[0].email.value;
+         var contactNumber = document.forms[0].contactnumber.value;
+         var message = document.forms[0].message.value;
+
+         if (username === "" || email === "" || contactNumber === "" || message === "") {
+            alert("Please fill in all fields.");
+            return false;
+         }
+      }
+   </script>
+</body>
+</html>
